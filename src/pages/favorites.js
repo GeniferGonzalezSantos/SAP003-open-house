@@ -20,7 +20,7 @@ const favoritesTemplate = (props) => {
 };
 
 const getFavorites = () => {
-  const user = firebase.auth().currentUser.uid; 
+  const user = firebase.auth().currentUser.uid;
   document.querySelector('.container-category').innerHTML = '';
   main.innerHTML = '';
   document.querySelectorAll('.arrow').forEach((arrow) => arrow.classList.add('hide'));
@@ -47,7 +47,7 @@ const getFavorites = () => {
 };
 
 window.favorites = {
-  handleClick: (event, callBack) => {  
+  handleClick: (event, callBack) => {
     callBack(event.currentTarget);
   },
 };

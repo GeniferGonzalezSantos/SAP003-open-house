@@ -6,11 +6,11 @@ const hammer = new Hammer(document.querySelector('main'));
 let index = 0;
 let tamanho = 0;
 
-const moreInfo = (target) => { 
+const moreInfo = (target) => {
   window.location.hash = target.id;
 };
 
-const select = (id) => { 
+const select = (id) => {
   window.location.hash = id;
 };
 
@@ -46,7 +46,7 @@ const showEvents = (array) => {
     main.innerHTML = Card(array[index], funcs);
   }
 }
-  
+
 let arrayEvents = [];
 const getEvents = () => {
   document.querySelectorAll('.arrow').forEach((arrow) => arrow.classList.remove('hide'));
@@ -110,8 +110,8 @@ const save = (bookmark) => {
 };
 
 let arrayfilter = [];
-  
-const getCategory = (parameter, hash) => { 
+
+const getCategory = (parameter, hash) => {
   const category = hash.replace(/\#(.*?)\-/, '')
   document.querySelector('main').innerHTML = '';
 
@@ -121,14 +121,12 @@ const getCategory = (parameter, hash) => {
     .get()
     .then((querySnapshot) => {
       arrayfilter = [];
-      querySnapshot.forEach((doc) => {       
+      querySnapshot.forEach((doc) => {
         const docEvent = {
           ...doc.data(),
           id: doc.id,
           position: index,
         };
-        console.log(docEvent);
-        
         arrayfilter.push(docEvent);
         tamanho = arrayfilter.length;
       });
@@ -138,13 +136,13 @@ const getCategory = (parameter, hash) => {
 };
 
 const swipeRight = () => {
-  (index === tamanho - 1) ? index = 0 : index += 1;  
+  (index === tamanho - 1) ? index = 0 : index += 1;
   const card = document.querySelector('article');
   card.className = 'card card-size p-1 cards-background swiping-right';
   if (window.location.hash === '') {
     card.addEventListener('animationend', () => { showEvents(arrayEvents) });
   } else {
-    card.addEventListener('animationend',() => { showEvents(arrayfilter) });
+    card.addEventListener('animationend', () => { showEvents(arrayfilter) });
   }
 };
 

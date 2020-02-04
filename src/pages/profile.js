@@ -2,7 +2,7 @@ const profile = (props) => {
   const template = `
     <div class="all-content">
       <div class="content-one">
-      <img  class="img-profile" src="./testeprofile.png" />
+      <img  class="img-profile" src="./img/testeprofile.png" />
       <div class="name">
         <span class="name-user">${props.nome}</span>
       </div>
@@ -14,7 +14,6 @@ const profile = (props) => {
         </div>
         <div class="border"></div>
       </div>
-    </div>
   `;
   return template;
 };

@@ -109,51 +109,60 @@
                 </div>
                 <div class="modal-body text-center ">
                     <button type="button" class="primary-button fab fa-google google-login rounded-circle"></button>
-                    <button type="button" class="primary-button fab fa-facebook-f facebook-login rounded-circle"></button>
+                    <button type="button"
+                        class="primary-button fab fa-facebook-f facebook-login rounded-circle"></button>
                 </div>
-                <button type="button" class="btn btn-primary m-3 register entry">Cadastre-se</button> 
+                <button type="button" class="btn btn-primary m-3 register entry">Cadastre-se</button>
             </div>
         </div>
     </div>
 
     <div class="modal" tabindex="-1" role="dialog" id='small-modal'>
         <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content text-center">
-            <div class="modal-header ">
-                <h5 class="modal-title">Apenas para membros cadastrados!</h5>
+            <div class="modal-content text-center">
+                <div class="modal-header ">
+                    <h5 class="modal-title">Apenas para membros cadastrados!</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Se cadastre ou faça login</p>
+                </div>
+                <button type="button" class="btn btn-primary m-3 entry login" data-dismiss="modal">Login</button>
+                <button type="button" class="btn btn-primary m-3 entry register"
+                    data-dismiss="modal">Cadastre-se</button>
             </div>
-            <div class="modal-body">
-                <p>Se cadastre ou faça login</p>
-            </div>
-        <button type="button" class="btn btn-primary m-3 entry login" data-dismiss="modal">Login</button>
-        <button type="button" class="btn btn-primary m-3 entry register" data-dismiss="modal">Cadastre-se</button>
-    </div>
 
-    <div class="modal" tabindex="-1" role="dialog" id='edit-name'>
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content text-center">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Editando perfil</h5>
-                  </div>
-                  <div class="modal-body login" data-dismiss="modal">
-                    <div class="form-group">
-                        <label for="new-name">Novo Nome</label>
-                        <input type="text" class="form-control" id="new-name" placeholder="Novo Nome">
+            <div class="modal" tabindex="-1" role="dialog" id='edit-name'>
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content text-center">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Editando perfil</h5>
+                        </div>
+                        <div class="modal-body login" data-dismiss="modal">
+                            <div class="form-group">
+                                <label for="new-name">Novo Nome</label>
+                                <input type="text" class="form-control" id="new-name" placeholder="Novo Nome">
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
             </div>
-        </div> 
 
-    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
-    <script src="firestore-config.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
-    <script type="module" src="main.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+            <script src="firestore-config.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+            <script type="module" src="main.js"></script>
 </body>
+
 </html>

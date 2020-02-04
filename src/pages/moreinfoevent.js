@@ -23,7 +23,7 @@ const getMoreEvent = (id) => {
 
   firebase.firestore().collection('events').doc(noHashId).get()
     .then((doc) => {
-      main.innerHTML = moreInfoTemplate(doc.data()); 
+      main.innerHTML = moreInfoTemplate(doc.data());
       getMap(doc.data().location);
     });
 };
