@@ -8,7 +8,7 @@
 
 ***
 
-![logo](src/img/logotipo.png)
+![logo](src/img/print.png)
 
 # 1. Sobre o projeto
 
